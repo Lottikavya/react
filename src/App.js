@@ -12,7 +12,7 @@ function App() {
       .catch(error => console.error(error));
   }, [currentPage, itemsPerPage]);
 
-  const totalPages = Math.ceil(100 / itemsPerPage); // JSONPlaceholder has 100 posts in total
+  const totalPages = Math.ceil(100 / itemsPerPage); 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const currentItems = data.slice(startIndex, endIndex);
