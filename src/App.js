@@ -6,7 +6,6 @@ function App() {
   const [itemsPerPage, setItemsPerPage] = useState(13);
 
   useEffect(() => {
-    // Replace this URL with your actual data API endpoint
     fetch(`https://jsonplaceholder.typicode.com/posts`)
       .then(response => response.json())
       .then(data => setData(data))
